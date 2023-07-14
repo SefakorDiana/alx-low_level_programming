@@ -6,23 +6,22 @@
 */
 int main(void)
 {
-	int digit1 = 0;
+	int d, p;
 
-	while (digit1 <= 9)
+	for (d = '0'; d < '9'; d++)
 	{
-	int digit2 = digit1 + 1;
-
-	while (digit2 <= 9)
+	for (p = d + 1; p <= '9'; p++)
 	{
-	putchar('0' + digit1);
-	putchar('0' + digit2);
-
-	if (digit1 != 8 || digit2 != 9)
+	if (p != d)
 	{
+	putchar(d);
+	putchar(p);
+	if (d == '8' && p == '9')
+	continue;
 	putchar(',');
 	putchar(' ');
 	}
-	digit2++;
+	}
 	}
 	putchar('\n');
 	return (0);
