@@ -15,7 +15,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	printf("%d\n", n);
-	if (n > 0
+	if (n > 0)
 	{
 	printf("is positive\n");
 	}
@@ -27,6 +27,5 @@ int main(void)
 	{
 	printf("is negative\n");
 	}
-
 	return (0);
 }
