@@ -14,12 +14,12 @@ int main(void)
 	digit++;
 	}
 
-	char letter = 'a';
+	int bee = 'a';
 
-	while (letter <= 'f')
+	while (bee <= 'f')
 	{
-	putchar(letter);
-	letter++;
+	putchar(bee);
+	bee++;
 	}
 	putchar('\n');
 	return (0);
