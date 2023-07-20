@@ -7,7 +7,7 @@
  * fizzbuzz for both
  */
 
-intmain(void)
+int main(void)
 {
 	int i;
 
