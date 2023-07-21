@@ -4,14 +4,14 @@
  * main - prints from 1 to 100
  * Return: fizz for multiples of 3 and
  * buzz for multiples of of 5 and
- * fizzbuzz for both
+ * fizzbuzz for both and i for otherwise
  */
 
 int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 	if (i % 3 == 0 && i % 5 == 0)
 		{
