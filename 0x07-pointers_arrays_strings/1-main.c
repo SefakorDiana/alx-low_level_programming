@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -15,7 +15,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 	i = 0;
 	while (i < size)
 	{
-	if (i % 10)
+		if (i % 10)
 		{
 		printf(" ");
 		}
@@ -42,6 +42,6 @@ int main(void)
 	simple_print_buffer(buffer, 98);
 	_memcpy(buffer + 50, buffer2, 10);
 	printf("-------------------------------------------------\n");
-	simple_print_buffer(buffer, 98);    
+	simple_print_buffer(buffer, 98);
 	return (0);
 }
