@@ -15,13 +15,13 @@ void simple_print_buffer(char *buffer, unsigned int size)
 	i = 0;
 	while (i < size)
 	{
-		if (i % 10)
+	if (i % 10)
 		{
-			printf(" ");
+		printf(" ");
 		}
-			if (!(i % 10) && i)
+		if (!(i % 10) && i)
 		{
-			printf("\n");
+		printf("\n");
 		}
 		printf("0x%02x", buffer[i]);
 		i++;
