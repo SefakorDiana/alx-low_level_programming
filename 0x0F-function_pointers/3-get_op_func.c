@@ -5,7 +5,7 @@
  * get_op_func - selects the correct function to perform
  * the operation asked by the user
  * @s: the operator
- * @Return: a pointer to the function
+ * Return: a pointer to the function
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -23,5 +23,6 @@ int (*get_op_func(char *s))(int, int)
 
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
+
 	return (ops[i].f);
 }
